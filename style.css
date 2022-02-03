@@ -1,0 +1,41 @@
+:root {
+}
+
+body {
+  align-items: center;
+  background: #4f85bb; /* Somente para teste */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  background: #fff; /* Somente para teste */
+
+  height: 95vh;
+
+  margin-top: 1rem;
+  width: 45vw;
+}
+
+.content__pw{
+  
+}
+
+.content__pw-rng {
+  background-color: blueviolet;
+  text-align: center;
+  height: 3rem;
+}
+
+
+
+.form{}
+
+label {
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+input {
+  margin: 0.4rem;
+}

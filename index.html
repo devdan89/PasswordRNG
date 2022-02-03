@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="content__pw">
+        <p class="content__pw-rng">Sua senha ira aparecer aqui.</p>
+
+        
+          <div>
+            <button onclick="rng(8)">Gerar</button>
+          </div>
+
+          <div>
+            <input type="checkbox" id="letras" name="letras" checked />
+            <label for="letras"
+              >Letras [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p ...]</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" id="numeros" name="numeros" />
+            <label for="numeros">Números [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="especiais" name="especiais" />
+            <label for="especiais">Especiais [!, @, #, $, %, &, *]</label>
+          </div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

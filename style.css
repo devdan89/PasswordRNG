@@ -18,19 +18,16 @@ body {
   width: 45vw;
 }
 
-.content__pw{
-  
+.content__pw {
+  background:rgb(245, 83, 83);
+  padding-top: 1rem;
+  height: 2.5rem;
 }
 
 .content__pw-rng {
   background-color: blueviolet;
   text-align: center;
-  height: 3rem;
 }
-
-
-
-.form{}
 
 label {
   font: 1rem "Fira Sans", sans-serif;

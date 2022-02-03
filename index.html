@@ -14,9 +14,19 @@
       </div>
 
       <div>
-        <button onclick="rng(8)">Gerar</button>
+        <button onclick="getQty()">Gerar</button>
       </div>
-
+      <div>
+        <label for="quantity"> Número de caracteres da senha(4 a 32):</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          min="4"
+          max="32"
+          value="4"
+        />
+      </div>
       <div>
         <input type="checkbox" id="letras" name="letras" checked />
         <label for="letras"
@@ -34,6 +44,14 @@
         <label for="especiais">Especiais [!, @, #, $, %, &, *]</label>
       </div>
     </div>
+
+    <script type="text/javascript">
+      function getQty() {
+        let quantity = document.querySelector("#quantity");
+
+        rng(quantity.value);
+      }
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

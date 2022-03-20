@@ -5,7 +5,7 @@ function rng(qty) {
   let pw = "";
   let sorteio = 0;
 
-  //Checando a escolha dos caracteres da senha.
+  //Checando a configuração da senha escolhida.
   let checkboxLetras = document.getElementById("letras");
   let checkboxNumeros = document.getElementById("numeros");
   let checkboxEspeciais = document.getElementById("especiais");

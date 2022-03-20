@@ -17,7 +17,8 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  min-width: 400px;
+  min-width: 380px;
+  min-height: 260px;
   
 
   /* card  */
@@ -27,8 +28,8 @@ body {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 
-  height: 50vh;
-  width: 30vw;
+  height: 30vh;
+  width: 10vw;
 }
 
 .content__pw {
@@ -38,12 +39,12 @@ body {
   justify-content: space-around;
 
 
-  margin: 1rem 0 1rem 0;
   backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  margin: 1rem 0 1rem 0;
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
 
   height: 2.5rem;
   width: 18rem;
@@ -55,22 +56,13 @@ body {
   text-align: center;
 }
 
-#letras{
-  margin-right: 2px;
-}
 
 label {
   color: aliceblue;
   font: 1rem "Fira Sans", sans-serif;
-}
-
-#quantity{
-  justify-content:center;
-}
-
-label{
   font-family: 'Montserrat',sans-serif;
 }
+
 
 input {
   margin: 0.4rem;
@@ -83,7 +75,9 @@ input {
   background-color: rgb(110, 102, 216)
 }
 
-/* É somente um teste. */
+
+
+/* button 'GERAR' effect */
 
 button {
   margin-top: 1rem;
@@ -122,3 +116,6 @@ button:hover::before {
 button:hover {
   color: #111;
 }
+
+
+

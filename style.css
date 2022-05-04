@@ -54,6 +54,8 @@ body {
   color: #fff;
   font-family: 'Anton', 'Montserrat',sans-serif;
   text-align: center;
+  height: 30px;
+  width: 300px
 }
 
 
@@ -75,9 +77,20 @@ input {
   padding-left: 2.5rem
 }
 
+.ckbox{
+  display: flex;
+  width: 105px;
+  justify-content: space-between;
+}
+
+btn__gen {
+  width: 80px;
+  height: 25px
+}
 
 
 /* button 'GERAR' effect */
+
 
 .btn__gen {
   background-color: transparent;
@@ -115,6 +128,10 @@ input {
 
 .btn__gen:hover {
   color: #111;
+}
+
+.copy{
+  display: none;
 }
 
 

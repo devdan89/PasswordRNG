@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 380px;
-  min-height: 260px;
+  min-height: 300px;
   
 
   /* card  */
@@ -79,8 +79,9 @@ input {
 
 .ckbox{
   display: flex;
-  width: 105px;
+  width: 115px;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 btn__gen {
@@ -97,7 +98,7 @@ btn__gen {
   border: 2px solid #17c3b2;
   color: #08eed7;
   font-size: 12px;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   padding: 0.8em 1.8em;
   position: relative;
   overflow: hidden;

@@ -1,4 +1,3 @@
-
 function rng(qty) {
   const letras = "abcdefghijklmnopqrstuvwxyz";
   const especiais = "!@#$%&*";
@@ -9,6 +8,8 @@ function rng(qty) {
   let checkboxLetras = document.getElementById("letras");
   let checkboxNumeros = document.getElementById("numeros");
   let checkboxEspeciais = document.getElementById("especiais");
+  let checkboxMaiusculas = document.getElementById("maiusculas");
+  let contMaiusculas = 0;
 
   //Gerador de senha.
   if (
@@ -21,12 +22,26 @@ function rng(qty) {
         sorteio = Math.floor(Math.random() * 3) + 1;
 
         if (checkboxLetras.checked & (sorteio == 1)) {
+          //Adicionando uma letra maiuscula aleatoria.
+          if (checkboxMaiusculas.checked && contMaiusculas < 2) {
+            let temp = new String(
+              letras[Math.floor(Math.random() * letras.length)]
+            );
+            pw += temp.toUpperCase();
+            i++;
+            contMaiusculas++;
+          }
+          //Caso não esteja selecionado o maiusculo faz a operação normal da letra
           pw += new String(letras[Math.floor(Math.random() * letras.length)]);
           i++;
-        } else if (checkboxNumeros.checked & (sorteio == 2)) {
+        } 
+        //Gerando um número aleatorio
+        else if (checkboxNumeros.checked & (sorteio == 2)) {
           pw += new String(Math.floor(Math.random() * 10));
           i++;
-        } else if (checkboxEspeciais.checked & (sorteio == 3)) {
+        } 
+        //Gerando um simbolo aleatorio
+        else if (checkboxEspeciais.checked & (sorteio == 3)) {
           pw += new String(
             especiais[Math.floor(Math.random() * especiais.length)]
           );
@@ -34,14 +49,14 @@ function rng(qty) {
         }
       }
       document.querySelector(".content__pw-rng").innerHTML = pw;
-      
-    }
-    else{
+    } else {
       document.querySelector(".content__pw-rng").innerHTML =
-      "A senha precisa ter no mínimo 4 e no máximo 32 caracteres";
+        "A senha precisa ter no mínimo 4 e no máximo 32 caracteres";
     }
   } else {
     document.querySelector(".content__pw-rng").innerHTML =
       "Você deve escolher pelo menos uma opção!";
   }
+
+  console.log(checkboxMaiusculas.checked);
 }

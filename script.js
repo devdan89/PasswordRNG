@@ -31,15 +31,15 @@ function rng(qty) {
             i++;
             contMaiusculas++;
           }
-          //Caso não esteja selecionado o maiusculo faz a operação normal da letra
+          //Caso não esteja selecionado o maiusculo faz a operação normal da letra minuscula
           pw += new String(letras[Math.floor(Math.random() * letras.length)]);
           i++;
-        } 
+        }
         //Gerando um número aleatorio
         else if (checkboxNumeros.checked & (sorteio == 2)) {
           pw += new String(Math.floor(Math.random() * 10));
           i++;
-        } 
+        }
         //Gerando um simbolo aleatorio
         else if (checkboxEspeciais.checked & (sorteio == 3)) {
           pw += new String(
@@ -57,6 +57,4 @@ function rng(qty) {
     document.querySelector(".content__pw-rng").innerHTML =
       "Você deve escolher pelo menos uma opção!";
   }
-
-  console.log(checkboxMaiusculas.checked);
 }

@@ -4,7 +4,7 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  width: calc(100vw - 15px);
+  width: calc(100vw - 30px);
 
   /* background */
   background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100");
@@ -17,9 +17,8 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  min-width: 380px;
-  min-height: 300px;
-  
+  width: 320px;
+  height: 300px;
 
   /* card  */
   backdrop-filter: blur(16px) saturate(180%);
@@ -27,9 +26,6 @@ body {
   background-color: rgba(17, 25, 40, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
-
-  height: 30vh;
-  width: 10vw;
 }
 
 .content__pw {
@@ -38,7 +34,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
 
-
   backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.75);
   border-radius: 12px;
@@ -46,25 +41,23 @@ body {
   margin: 1rem 0 1rem 0;
   -webkit-backdrop-filter: blur(16px) saturate(180%);
 
-  height: 2.5rem;
-  width: 18rem;
+  height: 50px;
+  width: 280px;
 }
 
 .content__pw-rng {
   color: #fff;
-  font-family: 'Anton', 'Montserrat',sans-serif;
+  font-family: "Anton", "Montserrat", sans-serif;
   text-align: center;
   height: 30px;
-  width: 300px
+  width: 300px;
 }
-
 
 label {
   color: aliceblue;
   font: 1rem "Fira Sans", sans-serif;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 input {
   margin: 0.4rem;
@@ -74,10 +67,13 @@ input {
   background-color: rgb(110, 102, 216);
   border-radius: 12px;
   border: 1px solid #582feb20;
-  padding-left: 2.5rem
+  padding-left: 2.5rem;
+  font: 1rem "Montserrat";
+  margin: 0.5rem 0 0.5rem 0;
+  width: 60px;
 }
 
-.ckbox{
+.ckbox {
   display: flex;
   width: 115px;
   justify-content: space-between;
@@ -86,12 +82,10 @@ input {
 
 btn__gen {
   width: 80px;
-  height: 25px
+  height: 25px;
 }
 
-
 /* button 'GERAR' effect */
-
 
 .btn__gen {
   background-color: transparent;
@@ -131,9 +125,60 @@ btn__gen {
   color: #111;
 }
 
-.copy{
+.copy {
   display: none;
 }
 
+/* Responsive */
+@media (min-width: 270px) and (max-width: 450px) {
+  .content {
+    width: 300px;
+  }
 
+  .content__pw {
+    width: 280px;
+  }
 
+  #quantity {
+    font: 0.8rem "Montserrat";
+    margin: 0.5rem 0 0.5rem 0;
+    width: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    width: 500px;
+    height: 365px;
+  }
+
+  .content__pw {
+    width: 450px;
+    height: 80px;
+  }
+
+  label {
+    padding: 0.1rem 0 0.1rem 0;
+    font: 1.3rem "Fira Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .ckbox {
+    width: 155px;
+  }
+
+  .content__pw-rng {
+    color: #fff;
+    font: 1.5rem "Anton";
+    font-family: "Anton", "Montserrat", sans-serif;
+    text-align: center;
+    height: 30px;
+    width: 450px;
+  }
+
+  #quantity {
+    font: 1rem "Montserrat";
+    margin: 0.5rem 0 0.5rem 0;
+    width: 50px;
+  }
+}

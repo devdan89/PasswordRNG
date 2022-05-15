@@ -130,7 +130,7 @@ btn__gen {
 }
 
 /* Responsive */
-@media (min-width: 270px) and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .content {
     width: 300px;
   }

@@ -23,7 +23,7 @@ function rng(qty) {
 
         if (checkboxLetras.checked & (sorteio == 1)) {
           //Adicionando uma letra maiuscula aleatoria.
-          if (checkboxMaiusculas.checked && contMaiusculas < 2) {
+          if (checkboxMaiusculas.checked && contMaiusculas < 1) {
             let temp = new String(
               letras[Math.floor(Math.random() * letras.length)]
             );
